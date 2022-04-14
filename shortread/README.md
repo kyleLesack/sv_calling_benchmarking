@@ -4,8 +4,12 @@ Scripts for structural variant caller benchmarking using shortread data.
 
 # Requirements
 
-Python 3
-bedtools
+* Python 3
+* bedtools (tested using v2.30.0)
+* Python libraries
+	* pybedtools (tested using v0.9.0)
+	* pandas (tested using v1.1.3)
+	* upsetplot (tested using v0.6.0)
 
 # Steps
 tar -zxvf 0_data.tar.gz # Extract the vcf files
