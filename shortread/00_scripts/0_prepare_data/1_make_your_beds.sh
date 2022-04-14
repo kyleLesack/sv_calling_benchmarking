@@ -7,7 +7,7 @@ find 0_data/1_variant_calls/cnMOPS/ -type f -name '*S9.vcf' | while read FILE ; 
 done
 
 find 0_data/1_variant_calls/CNVnator/ -type f -name '*S10.vcf' | while read FILE ; do
-	python3 00_scripts/0_prepare_data/convert2bed.py ${FILE} cnvnator --minsize 100 --maxsize 500000 --min_qual_svim 15 ;
+	python3 00_scripts/0_prepare_data/convert2bed.py ${FILE} cnvnator --minsize 100 --maxsize 500000 ;
 done
 
 find 0_data/1_variant_calls/Delly/ -type f -name '*S11.vcf' | while read FILE ; do
