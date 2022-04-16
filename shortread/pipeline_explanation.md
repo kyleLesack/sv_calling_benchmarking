@@ -43,4 +43,12 @@ Many tools will predict multiple overlapping variant calls of the same type for 
 
 ## 5 - Get caller overlap
 
+Determine the agreement between callers for which genes are spanned by SVs.
+
 * `00_scripts/1_analyze_overlap/5_get_caller_overlap.sh`
+	* Calls Python script to determine agreement between callers
+		* get_gene_overlap_between_callers.py
+			* Requires config files that specify the file locations and names, and samples to include in the analysis.
+				* deletions_high_confidence-cnv.conf
+				* inversions_high_confidence-cnv.conf
+				* duplications_high_confidence-cnv.conf
