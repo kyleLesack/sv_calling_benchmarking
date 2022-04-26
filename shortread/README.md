@@ -12,6 +12,7 @@ Scripts for structural variant caller benchmarking using shortread data.
 	* upsetplot (tested using v0.6.0)
 
 # Steps
+
 tar -zxvf 0_data.tar.gz # Extract the vcf files
 sh 00_scripts/0_prepare_data/0_clean_files.sh; rm *.log
 sh 00_scripts/0_prepare_data/1_make_your_beds.sh 2>&1 | tee -a 1_make_your_beds.log # convert output from caller to bed file with necessary data
