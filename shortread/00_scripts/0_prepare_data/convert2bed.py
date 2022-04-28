@@ -183,6 +183,8 @@ def parse_delly(delly_variants):
 					paired_end_support = int(x.split("=")[1])
 				elif x.split("=")[0] == "SR":
 					split_read_support = int(x.split("=")[1])
+				elif x.split("=")[0] =="SVTYPE":
+					variant_type = x.split("=")[1]
 			support_value = max(paired_end_support, split_read_support)
 
 			if variant_type in DELLY_SV_TYPES:
