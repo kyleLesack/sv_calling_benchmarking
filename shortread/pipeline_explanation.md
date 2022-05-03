@@ -49,6 +49,28 @@ Determine the agreement between callers for which genes are spanned by SVs.
 	* Calls Python script to determine agreement between callers
 		* get_gene_overlap_between_callers.py
 			* Requires config files that specify the file locations and names, and samples to include in the analysis.
-				* deletions_high_confidence-cnv.conf
-				* inversions_high_confidence-cnv.conf
-				* duplications_high_confidence-cnv.conf
+				* 00_scripts/1_analyze_overlap/config_files/deletions_high_confidence-cnv.conf
+				* 00_scripts/1_analyze_overlap/config_files/duplications_high_confidence-cnv.conf
+				* 00_scripts/1_analyze_overlap/config_files/inversions_high_confidence-cnv.conf
+
+## Create upset plots
+
+Plot the agreement between callers for genes that are spanned by SVs.
+
+* `00_scripts/1_analyze_overlap/6_create_upset_plots.sh`
+	* Calls Python script to create upset plots
+		* create_upset_plots.py
+			* Requires config files that specify the csv file containing the overlapping calls from each caller, and the callers to analyze
+				* 00_scripts/2_make_plots/config_files/deletion_high_confidence-cnv.conf
+				* 00_scripts/2_make_plots/config_files/duplication_high_confidence-cnv.conf
+				* 00_scripts/2_make_plots/config_files/inversion_high_confidence-cnv.conf
+* parameters in *6_create_upset_plots.sh*
+	* input_config
+		* config file to pass to script
+	* variant_type
+		* variant type to plot
+	* --max_combos
+		* Maximum number of combinations to include in each upset plot. Recommended when the total of combinations is too large to plot effectively
+	* --min_degree
+		* Optional parameter for the minimum number of callers required to overlap to be included in the plot
+50k deletion --max_combos 20

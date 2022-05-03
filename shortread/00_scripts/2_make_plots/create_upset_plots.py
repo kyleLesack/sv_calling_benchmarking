@@ -14,7 +14,6 @@ from upsetplot import generate_counts, plot
 config = configparser.ConfigParser()
 parser = argparse.ArgumentParser()
 parser.add_argument("input_config", help="config file for the variant caller paths, filenames, etc.")
-parser.add_argument("maximum_size", help="maximum variant size")
 parser.add_argument("variant_type", help="variant type to be analyzed")
 parser.add_argument("--max_combos", dest='max_combos',nargs='?',type=int,help="Maximum number of combos in the plot")
 parser.add_argument("--min_degree", dest='min_degree',nargs='?', type=int, help="Combo minimum number of callers")
