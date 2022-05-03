@@ -1,7 +1,7 @@
 # Get variants that overlap with protein coding genes
 find 1_processed_beds/2_variant_calls_declustered -type f -name "*declustered.bed" | while read FILE ; do
 	myfile="$(echo ${FILE}  | rev | cut -d '.' -f 2- | rev)" ;
-	bedtools intersect -wo -F 0.5 -a ${FILE} -b 0_data/0_annotations_masks_references/annotations/c_elegans.PRJNA13758.WBPS14.canonical_geneset-genes_only-protein_coding_only.bed | cut -f 1-4,8 > ${myfile}.spans_protein_coding.bed ;
+	bedtools intersect -wo -F 0.5 -a ${FILE} -b 0_data/0_annotations/c_elegans.PRJNA13758.WBPS14.canonical_geneset-genes_only-protein_coding_only.bed | cut -f 1-4,8 > ${myfile}.spans_protein_coding.bed ;
 done
 
 # Sort beds
