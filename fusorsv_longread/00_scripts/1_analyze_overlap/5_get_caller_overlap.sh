@@ -1,0 +1,3 @@
+python3 00_scripts/1_analyze_overlap/get_gene_overlap_between_callers.py 00_scripts/1_analyze_overlap/config_files/deletions_high_confidence-cnv.conf deletion
+python3 00_scripts/1_analyze_overlap/get_gene_overlap_between_callers.py 00_scripts/1_analyze_overlap/config_files/inversions_high_confidence-cnv.conf inversion
+python3 00_scripts/1_analyze_overlap/get_gene_overlap_between_callers.py 00_scripts/1_analyze_overlap/config_files/duplications_high_confidence-cnv.conf duplication
