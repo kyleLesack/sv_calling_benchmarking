@@ -1,5 +1,9 @@
 # sv_calling_benchmarking
 
-This repo contains the scripts and vcf file data used to benchmark structural variation calling in *Caenorhabditis elegans*. The data and pipelines for shortread and longread caller benchmarking are available in the shortread and longread directories respectively. The SVE and FusorSV tools were used for shortread calling in BreakDancer, cnMOPS, CNVnator, Delly, fusorsv, Hydra, and Lumpy. 
+This repo contains the scripts and vcf file data used to benchmark structural variation calling in *Caenorhabditis elegans*. The data and pipelines for shortread and longread caller benchmarking are available in the shortread and longread directories respectively.  The SVE and FusorSV tools were used for shortread calling in BreakDancer, cnMOPS, CNVnator, Delly, fusorsv, Hydra, and Lumpy. 
 
 Longread calling was performed using Assemblytics, MUM&Co, pbsv, Sniffles, and SVIM.
+
+To compare calling variants using a shortread data with longread data, the longread pipeline with FusorSV is available in fusorsv_longread.
+
+[The pipeline steps are explained here.](shortread/pipeline_explanation.md)
