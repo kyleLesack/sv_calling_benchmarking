@@ -1,6 +1,6 @@
 # cendr_benchmarking
 
-Scripts for structural variant caller benchmarking using shortread data.
+Scripts for structural variant caller benchmarking using longread data.
 
 # Requirements
 
