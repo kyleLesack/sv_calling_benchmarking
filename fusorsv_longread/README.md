@@ -4,7 +4,6 @@ Scripts for structural variant caller benchmarking using longread data and Fusor
 
 # Requirements
 
-*
 * Python 3
 * bedtools (tested using v2.30.0)
 * Python libraries
@@ -22,3 +21,4 @@ sh 00_scripts/0_prepare_data/3_decluster.sh 2>&1 | tee -a 3_decluster.log # Choo
 sh 00_scripts/1_analyze_overlap/4_get_gene_overlap.sh | tee -a 4_get_gene_overlap.log # Get SVs that span structural variants
 sh 00_scripts/1_analyze_overlap/5_get_caller_overlap.sh | tee -a 5_get_caller_overlap.log # Get overlap between callers
 sh 00_scripts/1_analyze_overlap/6_create_upset_plots.sh | tee -a 6_create_upset_plots.log # Create upset plots
+sh 00_scripts/1_analyze_overlap/7_analyze_pairwise_overlap.sh | tee -a 7_analyze_pairwise_overlap.log # Compare the pairwise intersection between callers
