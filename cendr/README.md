@@ -11,7 +11,13 @@ Scripts for comparing the predicted structural variants from CeNDR shortread (ca
         * pandas (tested using v1.1.3)
         * upsetplot (tested using v0.6.0)
 
-## Process variant calls
+## Steps
+
+tar -zxvf 0_data_1.tar.gz
+
+tar -zxvf 0_data_2.tar.gz
+
+tar -zxvf 0_data_3.tar.gz
 
 sh 00_scripts/0_prepare_data/0_clean_files.sh; rm *.log
 
@@ -25,4 +31,4 @@ sh 00_scripts/1_analyze_overlap/4_get_gene_overlap.sh | tee -a logs/4_get_gene_o
 
 sh 00_scripts/1_analyze_overlap/5_get_caller_overlap.sh | tee -a logs/5_get_caller_overlap.log # Get overlap between callers
 
-sh 00_scripts/1_analyze_overlap/6_create_upset_plots.sh | tee -a logs/6_create_upset_plots.log # Create upset plots
+sh 00_scripts/1_analyze_overlap/6_create_upset_plots.sh | tee -a logs/6_create_upset_plots.log # Create upset plot
