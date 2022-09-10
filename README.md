@@ -6,4 +6,6 @@ Longread calling was performed using Assemblytics, MUM&Co, pbsv, Sniffles, and S
 
 To compare calling variants using a shortread data with longread data, the longread pipeline with FusorSV is available [here](fusorsv_longread).
 
+To compare the results from CeNDR data, the longread with FusorSV pipelie is available [here](cendr).
+
 [The pipeline steps are explained here.](shortread/pipeline_explanation.md)
