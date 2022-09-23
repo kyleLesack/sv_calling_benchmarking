@@ -1,0 +1,26 @@
+##fileformat=VCFv4.2
+##fileDate=2020-11-1
+##reference=c_elegans.PRJNA13758.WS263
+##FILTER=<ID=LowQual,Description="Low Quality">
+##FILTER=<ID=PASS,Description="All filters passed">
+##ALT=<ID=INS,Description="Insertion of novel sequence">
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=CNV,Description="Copy number variable region">
+##ALT=<ID=INV,Description="Inversion">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the variant described in this record">
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=SVLEN,Number=.,Type=Integer,Description="Difference in length between REF and ALT alleles">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=CHR2,Number=1,Type=String,Description="Chromosome for END coordinate in case of a translocation">
+##INFO=<ID=SVEX,Number=1,Type=Float,Description="Expected Value of the Group SV call given the Prior Targeted Metric Pool">
+##INFO=<ID=SEQ_TECH,Number=.,Type=String,Description="Sequencing Technology Used">
+##INFO=<ID=TARGET,Number=1,Type=Integer,Description="1 if the call overlaps a target call, 0 otherwise">
+#CHROM        POS     ID      REF     ALT     QUAL    FILTER  INFO
+II	1457617	SVSIM_DEL2_18500bp	N	<DEL>	.	PASS	DBVARID;CALLID=SVSIM_DEL2_18500bp;SVTYPE=DEL;EXPERIMENT=1;SAMPLE=DEL_L-DUP_L-INV_L-A;END=1476117;REGION=NA
+IV	2202366	SVSIM_DUP7_266000bp	N	<DUP>	.	PASS	DBVARID;CALLID=SVSIM_DUP7_266000bp;SVTYPE=DUP;EXPERIMENT=1;SAMPLE=DEL_L-DUP_L-INV_L-A;END=2468366;REGION=NA
+IV	11702289	SVSIM_DEL4_58500bp	N	<DEL>	.	PASS	DBVARID;CALLID=SVSIM_DEL4_58500bp;SVTYPE=DEL;EXPERIMENT=1;SAMPLE=DEL_L-DUP_L-INV_L-A;END=11760789;REGION=NA
+IV	12848606	SVSIM_DEL1_28500bp	N	<DEL>	.	PASS	DBVARID;CALLID=SVSIM_DEL1_28500bp;SVTYPE=DEL;EXPERIMENT=1;SAMPLE=DEL_L-DUP_L-INV_L-A;END=12877106;REGION=NA
+IV	14800310	SVSIM_INV6_185000bp	N	<INV>	.	PASS	DBVARID;CALLID=SVSIM_INV6_185000bp;SVTYPE=INV;EXPERIMENT=1;SAMPLE=DEL_L-DUP_L-INV_L-A;END=14985310;REGION=NA
+V	6798788	SVSIM_DEL5_38500bp	N	<DEL>	.	PASS	DBVARID;CALLID=SVSIM_DEL5_38500bp;SVTYPE=DEL;EXPERIMENT=1;SAMPLE=DEL_L-DUP_L-INV_L-A;END=6837288;REGION=NA
+V	18273292	SVSIM_DEL3_48500bp	N	<DEL>	.	PASS	DBVARID;CALLID=SVSIM_DEL3_48500bp;SVTYPE=DEL;EXPERIMENT=1;SAMPLE=DEL_L-DUP_L-INV_L-A;END=18321792;REGION=NA

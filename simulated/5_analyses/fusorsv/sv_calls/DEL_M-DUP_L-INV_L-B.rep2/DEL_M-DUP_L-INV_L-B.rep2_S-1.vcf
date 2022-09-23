@@ -1,0 +1,34 @@
+##fileformat=VCFv4.2
+##fileDate=20201106
+##reference=c_elegans.PRJNA13758.WS263.genomic
+##FILTER=<ID=LowQual,Description="Low Quality">
+##FILTER=<ID=PASS,Description="All filters passed">
+##ALT=<ID=INS,Description="Insertion of novel sequence">
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=CNV,Description="Copy number variable region">
+##ALT=<ID=INV,Description="Inversion">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the variant described in this record">
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=SVLEN,Number=.,Type=Integer,Description="Difference in length between REF and ALT alleles">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=CHR2,Number=1,Type=String,Description="Chromosome for END coordinate in case of a translocation">
+##INFO=<ID=SVEX,Number=1,Type=Float,Description="Expected Value of the Group SV call given the Prior Targeted Metric Pool">
+##INFO=<ID=SEQ_TECH,Number=.,Type=String,Description="Sequencing Technology Used">
+##INFO=<ID=TARGET,Number=1,Type=Integer,Description="1 if the call overlaps a target call, 0 otherwise">
+##contig=<ID=I,len=15072434>
+##contig=<ID=V,len=20924180>
+##contig=<ID=X,len=17718942>
+##contig=<ID=II,len=15279421>
+##contig=<ID=IV,len=17493829>
+##contig=<ID=III,len=13783801>
+##contig=<ID=MtDNA,len=13794>
+##INFO=<ID=SVMETHOD,Number=.,Type=String,Description="-1:fusorSV,0:True,1:MetaSV,4:BreakDancer,9:cnMOPS,10:CNVnator,11:Delly,13:GATK,14:GenomeSTRiP,17:Hydra,18:Lumpy,35:BreakSeq,36:Pindel,38:Tigra">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	DEL_M-DUP_L-INV_L-B.rep2
+V	14691735	fusorSV_1	G	<INV>	.	PASS	SVTYPE=INV;SVLEN=44679;END=14736414;CHR2=V;IMPRECISE;SVEX=0.90667789438;SVMETHOD=11:2,4:1;TARGET=1	GT	0/1
+V	15264001	fusorSV_2	T	<DUP>	.	PASS	SVTYPE=DUP;SVLEN=100000;END=15364001;CHR2=V;IMPRECISE;SVEX=0.995286481203;SVMETHOD=9:0,18:4,11:4,10:0,38:0;TARGET=1	GT	0/1
+V	18160419	fusorSV_3	T	<INV>	.	PASS	SVTYPE=INV;SVLEN=75000;END=18235419;CHR2=V;IMPRECISE;SVEX=0.881689018499;SVMETHOD=17:13,18:5,11:7;TARGET=1	GT	0/1
+V	20894786	fusorSV_4	T	<DEL>	.	PASS	SVTYPE=DEL;SVLEN=1417;END=20896203;CHR2=V;IMPRECISE;SVEX=0.766539850778;SVMETHOD=18:6,11:10,4:6;TARGET=1	GT	0/1
+II	10944898	fusorSV_5	A	<DEL>	.	PASS	SVTYPE=DEL;SVLEN=1464;END=10946362;CHR2=V;IMPRECISE;SVEX=0.767479837904;SVMETHOD=18:0,11:14,4:10;TARGET=1	GT	0/1
+II	10969115	fusorSV_6	G	<DEL>	.	PASS	SVTYPE=DEL;SVLEN=1401;END=10970516;CHR2=V;IMPRECISE;SVEX=0.720101307962;SVMETHOD=18:1,11:16,4:12;TARGET=1	GT	0/1
+IV	8011282	fusorSV_7	T	<DEL>	.	PASS	SVTYPE=DEL;SVLEN=1302;END=8012584;CHR2=V;IMPRECISE;SVEX=0.767722818056;SVMETHOD=17:2,18:2,11:18,4:13,38:1;TARGET=1	GT	0/1
