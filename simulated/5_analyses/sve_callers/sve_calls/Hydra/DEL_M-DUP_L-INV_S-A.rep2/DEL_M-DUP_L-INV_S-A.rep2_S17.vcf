@@ -1,0 +1,26 @@
+##fileformat=VCFv4.1
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the variant described in this record">
+##INFO=<ID=CIPOS,Number=2,Type=Integer,Description="Confidence interval around POS for imprecise variants">
+##INFO=<ID=CIEND,Number=2,Type=Integer,Description="Confidence interval around END for imprecise variants">
+##INFO=<ID=SVLEN,Number=.,Type=Integer,Description="Difference in length between REF and ALT alleles">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=MATEID,Number=.,Type=String,Description="ID of mate breakends">
+##INFO=<ID=EVENT,Number=1,Type=String,Description="ID of event associated to breakend">
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=INV,Description="Inversion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=DUP:TANDEM,Description="Tandem Duplication">
+##source=hydra
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+I	38	hydra1a	C	C]X:17718679]	.	PASS	SVTYPE=BND;MATEID=hydra1b;IMPRECISE;CIPOS=0,217
+I	6185296	hydra2a	A	[I:6187516[A	.	PASS	SVTYPE=BND;MATEID=hydra2b;IMPRECISE;CIPOS=0,84
+I	6185306	hydra3a	T	[I:6187417[T	.	PASS	SVTYPE=BND;MATEID=hydra3b;IMPRECISE;CIPOS=0,160
+I	6187417	hydra3b	A	[I:6185306[A	.	PASS	SVTYPE=BND;MATEID=hydra3a;IMPRECISE;CIPOS=0,179
+I	6187516	hydra2b	T	[I:6185296[T	.	PASS	SVTYPE=BND;MATEID=hydra2a;IMPRECISE;CIPOS=0,121
+II	6432670	hydra5	A	<DEL>	.	PASS	SVTYPE=DEL;IMPRECISE;CIPOS=0,209;CIEND=0,253;END=6434203;SVLEN=-1534
+III	10690634	hydra6a	T	T]III:10690826]	.	PASS	SVTYPE=BND;MATEID=hydra6b;IMPRECISE;CIPOS=0,123
+III	10690826	hydra6b	A	A]III:10690634]	.	PASS	SVTYPE=BND;MATEID=hydra6a;IMPRECISE;CIPOS=0,102
+V	19253933	hydra7a	C	]V:19403719]C	.	PASS	SVTYPE=BND;MATEID=hydra7b;IMPRECISE;CIPOS=0,213
+V	19403719	hydra7b	C	C[V:19253933[	.	PASS	SVTYPE=BND;MATEID=hydra7a;IMPRECISE;CIPOS=0,215
+X	17718679	hydra1b	C	C]I:38]	.	PASS	SVTYPE=BND;MATEID=hydra1a;IMPRECISE;CIPOS=0,110

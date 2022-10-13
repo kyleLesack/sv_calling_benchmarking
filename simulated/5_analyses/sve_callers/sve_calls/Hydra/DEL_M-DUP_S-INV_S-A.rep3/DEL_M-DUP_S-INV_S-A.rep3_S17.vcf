@@ -1,0 +1,28 @@
+##fileformat=VCFv4.1
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the variant described in this record">
+##INFO=<ID=CIPOS,Number=2,Type=Integer,Description="Confidence interval around POS for imprecise variants">
+##INFO=<ID=CIEND,Number=2,Type=Integer,Description="Confidence interval around END for imprecise variants">
+##INFO=<ID=SVLEN,Number=.,Type=Integer,Description="Difference in length between REF and ALT alleles">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=MATEID,Number=.,Type=String,Description="ID of mate breakends">
+##INFO=<ID=EVENT,Number=1,Type=String,Description="ID of event associated to breakend">
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=INV,Description="Inversion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=DUP:TANDEM,Description="Tandem Duplication">
+##source=hydra
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+I	4877914	hydra2	A	<DUP:TANDEM>	.	PASS	SVTYPE=DUP;IMPRECISE;CIPOS=0,202;CIEND=0,206;END=4883702;SVLEN=5789
+I	6577499	hydra3	A	<DEL>	.	PASS	SVTYPE=DEL;IMPRECISE;CIPOS=0,206;CIEND=0,226;END=6578755;SVLEN=-1257
+I	13482238	hydra1	A	<DUP:TANDEM>	.	PASS	SVTYPE=DUP;IMPRECISE;CIPOS=0,205;CIEND=0,178;END=13490041;SVLEN=7804
+III	11262165	hydra4	T	<DEL>	.	PASS	SVTYPE=DEL;IMPRECISE;CIPOS=0,169;CIEND=0,232;END=11263354;SVLEN=-1190
+IV	73	hydra7a	C	C]IV:17493582]	.	PASS	SVTYPE=BND;MATEID=hydra7b;IMPRECISE;CIPOS=0,63
+IV	4859875	hydra5	A	<DUP:TANDEM>	.	PASS	SVTYPE=DUP;IMPRECISE;CIPOS=0,239;CIEND=0,237;END=4868638;SVLEN=8764
+IV	6526793	hydra6	A	<DEL>	.	PASS	SVTYPE=DEL;IMPRECISE;CIPOS=0,160;CIEND=0,139;END=6528165;SVLEN=-1373
+IV	17493582	hydra7b	T	T]IV:73]	.	PASS	SVTYPE=BND;MATEID=hydra7a;IMPRECISE;CIPOS=0,118
+V	8920495	hydra9	C	<DUP:TANDEM>	.	PASS	SVTYPE=DUP;IMPRECISE;CIPOS=0,212;CIEND=0,159;END=8927291;SVLEN=6797
+V	20625530	hydra8	T	<DEL>	.	PASS	SVTYPE=DEL;IMPRECISE;CIPOS=0,197;CIEND=0,188;END=20626842;SVLEN=-1313
+X	3651108	hydra11	T	<DUP:TANDEM>	.	PASS	SVTYPE=DUP;IMPRECISE;CIPOS=0,198;CIEND=0,236;END=3655871;SVLEN=4764
+X	13778072	hydra10a	G	G]X:13778314]	.	PASS	SVTYPE=BND;MATEID=hydra10b;IMPRECISE;CIPOS=0,117
+X	13778314	hydra10b	A	A]X:13778072]	.	PASS	SVTYPE=BND;MATEID=hydra10a;IMPRECISE;CIPOS=0,47

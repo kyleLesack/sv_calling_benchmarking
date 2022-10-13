@@ -1,0 +1,26 @@
+##fileformat=VCFv4.1
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the variant described in this record">
+##INFO=<ID=CIPOS,Number=2,Type=Integer,Description="Confidence interval around POS for imprecise variants">
+##INFO=<ID=CIEND,Number=2,Type=Integer,Description="Confidence interval around END for imprecise variants">
+##INFO=<ID=SVLEN,Number=.,Type=Integer,Description="Difference in length between REF and ALT alleles">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=MATEID,Number=.,Type=String,Description="ID of mate breakends">
+##INFO=<ID=EVENT,Number=1,Type=String,Description="ID of event associated to breakend">
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=INV,Description="Inversion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=DUP:TANDEM,Description="Tandem Duplication">
+##source=hydra
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+II	504111	hydra1	A	<DUP:TANDEM>	.	PASS	SVTYPE=DUP;IMPRECISE;CIPOS=0,101;CIEND=0,100;END=504533;SVLEN=423
+III	5737292	hydra4	T	<INV>	.	PASS	SVTYPE=INV;IMPRECISE;CIPOS=164,121;CIEND=200,57;END=5882337;SVLEN=145046
+III	11745731	hydra2	C	<INV>	.	PASS	SVTYPE=INV;IMPRECISE;CIPOS=236,175;CIEND=171,6;END=11910687;SVLEN=164957
+IV	15691749	hydra6	A	<DEL>	.	PASS	SVTYPE=DEL;IMPRECISE;CIPOS=0,239;CIEND=0,232;END=15694087;SVLEN=-2339
+V	8287102	hydra10	T	<DEL>	.	PASS	SVTYPE=DEL;IMPRECISE;CIPOS=0,149;CIEND=0,154;END=8289295;SVLEN=-2194
+V	10433515	hydra7	T	<DEL>	.	PASS	SVTYPE=DEL;IMPRECISE;CIPOS=0,213;CIEND=0,211;END=10435776;SVLEN=-2262
+V	12483507	hydra8a	T	]V:12603312]T	.	PASS	SVTYPE=BND;MATEID=hydra8b;IMPRECISE;CIPOS=0,208
+V	12603312	hydra8b	A	A[V:12483507[	.	PASS	SVTYPE=BND;MATEID=hydra8a;IMPRECISE;CIPOS=0,197
+V	17418825	hydra9a	T	]V:17558614]T	.	PASS	SVTYPE=BND;MATEID=hydra9b;IMPRECISE;CIPOS=0,155
+V	17558614	hydra9b	T	T[V:17418825[	.	PASS	SVTYPE=BND;MATEID=hydra9a;IMPRECISE;CIPOS=0,178
+X	8347388	hydra11	G	<DEL>	.	PASS	SVTYPE=DEL;IMPRECISE;CIPOS=0,214;CIEND=0,210;END=8349752;SVLEN=-2365

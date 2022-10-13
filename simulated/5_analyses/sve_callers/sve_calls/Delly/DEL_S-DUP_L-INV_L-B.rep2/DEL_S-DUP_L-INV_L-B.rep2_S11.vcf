@@ -1,0 +1,52 @@
+##fileformat=VCFv4.2
+##fileDate=20201106
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=INV,Description="Inversion">
+##ALT=<ID=TRA,Description="Translocation">
+##ALT=<ID=INS,Description="Insertion">
+##FILTER=<ID=LowQual,Description="PE/SR support below 3 or mapping quality below 20.">
+##INFO=<ID=CIEND,Number=2,Type=Integer,Description="PE confidence interval around END">
+##INFO=<ID=CIPOS,Number=2,Type=Integer,Description="PE confidence interval around POS">
+##INFO=<ID=CHR2,Number=1,Type=String,Description="Chromosome for END coordinate in case of a translocation">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the structural variant">
+##INFO=<ID=PE,Number=1,Type=Integer,Description="Paired-end support of the structural variant">
+##INFO=<ID=MAPQ,Number=1,Type=Integer,Description="Median mapping quality of paired-ends">
+##INFO=<ID=SR,Number=1,Type=Integer,Description="Split-read support">
+##INFO=<ID=SRQ,Number=1,Type=Float,Description="Split-read consensus alignment quality">
+##INFO=<ID=CONSENSUS,Number=1,Type=String,Description="Split-read consensus sequence">
+##INFO=<ID=CT,Number=1,Type=String,Description="Paired-end signature induced connection type">
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=PRECISE,Number=0,Type=Flag,Description="Precise structural variation">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=SVMETHOD,Number=1,Type=String,Description="Type of approach used to detect SV">
+##INFO=<ID=INSLEN,Number=1,Type=Integer,Description="Predicted length of the insertion">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GL,Number=G,Type=Float,Description="Log10-scaled genotype likelihoods for RR,RA,AA genotypes">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=FT,Number=1,Type=String,Description="Per-sample genotype filter">
+##FORMAT=<ID=RC,Number=1,Type=Integer,Description="Raw high-quality read counts for the SV">
+##FORMAT=<ID=RCL,Number=1,Type=Integer,Description="Raw high-quality read counts for the left control region">
+##FORMAT=<ID=RCR,Number=1,Type=Integer,Description="Raw high-quality read counts for the right control region">
+##FORMAT=<ID=CN,Number=1,Type=Integer,Description="Read-depth based copy-number estimate for autosomal sites">
+##FORMAT=<ID=DR,Number=1,Type=Integer,Description="# high-quality reference pairs">
+##FORMAT=<ID=DV,Number=1,Type=Integer,Description="# high-quality variant pairs">
+##FORMAT=<ID=RR,Number=1,Type=Integer,Description="# high-quality reference junction reads">
+##FORMAT=<ID=RV,Number=1,Type=Integer,Description="# high-quality variant junction reads">
+##source_20201106.1=vcf-merge(r953) /output//S11/inv.vcf.gz /output//S11/del.vcf.gz /output//S11/ins.vcf.gz
+##sourceFiles_20201106.1=0:/output//S11/inv.vcf.gz,1:/output//S11/del.vcf.gz,2:/output//S11/ins.vcf.gz
+##INFO=<ID=SF,Number=.,Type=String,Description="Source File (index to sourceFiles, f when filtered)">
+##INFO=<ID=AC,Number=.,Type=Integer,Description="Allele count in genotypes">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	DEL_S-DUP_L-INV_L-B	del_DEL_S-DUP_L-INV_L-B	ins_DEL_S-DUP_L-INV_L-B
+X	3492403	DEL00000003	N	<DEL>	.	PASS	AC=2;AN=2;CHR2=X;CIEND=-29,29;CIPOS=-29,29;CT=3to5;END=3492753;IMPRECISE;INSLEN=0;MAPQ=60;PE=3;SF=1;SVMETHOD=EMBL.DELLYv0.7.2;SVTYPE=DEL	GT:GL:RC:GQ:DV:DR:CN:RR:RCL:RCR:RV:FT	.	1/1:-18,-0.903089,0:0:10:3:0:0:0:7:11:0:LowQual	.
+X	4023016	INS00000007	N	<INS>	.	PASS	AC=1;AN=2;CHR2=X;CIEND=-39,39;CIPOS=-39,39;CT=NtoN;END=4023055;IMPRECISE;INSLEN=35;MAPQ=40;PE=3;SF=2;SVMETHOD=EMBL.DELLYv0.7.2;SVTYPE=INS	GT:GL:GQ:RC:DV:DR:CN:RR:RCL:RCR:RV:FT	.	.	0/1:-21.8928,0,-3.89305:39:0:6:1:-1:0:0:0:0:PASS
+X	16874778	INV00000002	N	<INV>	.	PASS	AC=2;AN=2;CHR2=X;CIEND=-87,87;CIPOS=-87,87;CONSENSUS=TCTGATTTAGGAAGGCATATAAAACTATTTCGACACTTTTAAATTAAACAAAAAAAAATTGTCCTCCTCGTCCTTTTCATCTTCCAGATT;CT=5to5;END=16949782;INSLEN=0;MAPQ=60;PE=7;PRECISE;SF=0;SR=4;SRQ=1;SVMETHOD=EMBL.DELLYv0.7.2;SVTYPE=INV	GT:GQ:RC:GL:DR:DV:RR:CN:RCR:RCL:RV:FT	1/1:15:3726:-13.996,-1.50111,0:0:7:0:2:1859:1760:5:PASS	.	.
+X	16874779	INV00000001	N	<INV>	.	PASS	AC=2;AN=2;CHR2=X;CIEND=-93,93;CIPOS=-93,93;CONSENSUS=AAGTATAAACTTATATTTTTTTAGTCAGAACGGAATGTTCAGCTTTAAAGGTCCCAAGTTTGAAAAAATGGATGCTCCAGGAAAAGATATCGAATTTGTG;CT=3to3;END=16949779;INSLEN=0;MAPQ=60;PE=7;PRECISE;SF=0;SR=5;SRQ=1;SVMETHOD=EMBL.DELLYv0.7.2;SVTYPE=INV	GT:RC:GQ:GL:RR:CN:DR:DV:RCR:RCL:FT:RV	1/1:3726:15:-15.5982,-1.50335,0:0:2:0:4:1859:1760:PASS:5	.	.
+V	14016945	DEL00000001	N	<DEL>	.	PASS	AC=2;AN=2;CHR2=V;CIEND=-123,123;CIPOS=-123,123;CONSENSUS=AACTTAGTCAATCTTCTGCCAAACTTTGGAAACTTTTGGTCAAACTTAGACAACCAATAAGACGTTTTATATTTATTATAC;CT=3to5;END=14017196;INSLEN=0;MAPQ=55;PE=3;PRECISE;SF=1;SR=4;SRQ=1;SVMETHOD=EMBL.DELLYv0.7.2;SVTYPE=DEL	GT:FT:RV:RCR:RCL:RR:CN:DR:DV:RC:GQ:GL	.	1/1:PASS:6:1:7:0:0:0:3:0:18:-16.8945,-1.80068,0	.
+V	18233414	INS00000006	N	<INS>	.	LowQual	AC=2;AN=2;CHR2=V;CIEND=-68,68;CIPOS=-68,68;CT=NtoN;END=18233482;IMPRECISE;INSLEN=32;MAPQ=40;PE=2;SF=2f;SVMETHOD=EMBL.DELLYv0.7.2;SVTYPE=INS	GT:RCL:RCR:FT:RV:GL:GQ:RC:CN:RR:DV:DR	.	.	1/1:0:0:LowQual:0:-15.9998,-1.20395,0:12:0:-1:0:4:0
+II	503981	INS00000001	N	<INS>	.	LowQual	AC=2;AN=2;CHR2=II;CIEND=-4,4;CIPOS=-4,4;CT=NtoN;END=503985;IMPRECISE;INSLEN=35;MAPQ=40;PE=2;SF=2f;SVMETHOD=EMBL.DELLYv0.7.2;SVTYPE=INS	GT:GQ:RC:GL:RR:CN:DR:DV:RCR:RCL:FT:RV	.	.	1/1:12:0:-15.9998,-1.20395,0:0:-1:0:4:0:0:LowQual:0
+II	504545	INS00000002	N	<INS>	.	LowQual	AC=2;AN=2;CHR2=II;CIEND=-50,50;CIPOS=-50,50;CT=NtoN;END=504595;IMPRECISE;INSLEN=36;MAPQ=47;PE=2;SF=2f;SVMETHOD=EMBL.DELLYv0.7.2;SVTYPE=INS	GT:RV:FT:RCL:RCR:DV:DR:CN:RR:GL:RC:GQ	.	.	1/1:0:PASS:0:0:6:0:-1:0:-20.1965,-1.80269,0:0:18
+II	4130263	INS00000003	N	<INS>	.	LowQual	AC=2;AN=2;CHR2=II;CIEND=-51,51;CIPOS=-51,51;CT=NtoN;END=4130314;IMPRECISE;INSLEN=39;MAPQ=45;PE=2;SF=2f;SVMETHOD=EMBL.DELLYv0.7.2;SVTYPE=INS	GT:RR:CN:DR:DV:RC:GQ:GL:FT:RV:RCR:RCL	.	.	1/1:0:-1:0:4:0:12:-16.5998,-1.20395,0:LowQual:0:0:0
+IV	13116107	INS00000004	N	<INS>	.	LowQual	AC=1;AN=2;CHR2=IV;CIEND=-44,44;CIPOS=-44,44;CT=NtoN;END=13116151;IMPRECISE;INSLEN=35;MAPQ=40;PE=2;SF=2f;SVMETHOD=EMBL.DELLYv0.7.2;SVTYPE=INS	GT:RV:FT:RCR:RCL:DR:DV:RR:CN:GQ:RC:GL	.	.	0/1:0:PASS:0:0:2:4:0:-1:81:0:-14.1938,0,-8.09399
+IV	13116306	INS00000005	N	<INS>	.	LowQual	AC=1;AN=2;CHR2=IV;CIEND=-70,70;CIPOS=-70,70;CT=NtoN;END=13116376;IMPRECISE;INSLEN=30;MAPQ=40;PE=2;SF=2f;SVMETHOD=EMBL.DELLYv0.7.2;SVTYPE=INS	GT:RV:FT:RCL:RCR:DV:DR:CN:RR:GL:GQ:RC	.	.	0/1:0:PASS:0:0:4:2:-1:0:-14.1938,0,-8.09399:81:0

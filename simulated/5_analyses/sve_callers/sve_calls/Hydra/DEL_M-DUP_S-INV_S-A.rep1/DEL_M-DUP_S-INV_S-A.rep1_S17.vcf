@@ -1,0 +1,24 @@
+##fileformat=VCFv4.1
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the variant described in this record">
+##INFO=<ID=CIPOS,Number=2,Type=Integer,Description="Confidence interval around POS for imprecise variants">
+##INFO=<ID=CIEND,Number=2,Type=Integer,Description="Confidence interval around END for imprecise variants">
+##INFO=<ID=SVLEN,Number=.,Type=Integer,Description="Difference in length between REF and ALT alleles">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=MATEID,Number=.,Type=String,Description="ID of mate breakends">
+##INFO=<ID=EVENT,Number=1,Type=String,Description="ID of event associated to breakend">
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=INV,Description="Inversion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=DUP:TANDEM,Description="Tandem Duplication">
+##source=hydra
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+I	5889225	hydra2	A	<DEL>	.	PASS	SVTYPE=DEL;IMPRECISE;CIPOS=0,185;CIEND=0,200;END=5890512;SVLEN=-1288
+I	11643914	hydra1	A	<DEL>	.	PASS	SVTYPE=DEL;IMPRECISE;CIPOS=0,197;CIEND=0,156;END=11645103;SVLEN=-1190
+III	645887	hydra3	A	<DEL>	.	PASS	SVTYPE=DEL;IMPRECISE;CIPOS=0,166;CIEND=0,203;END=647119;SVLEN=-1233
+III	718187	hydra4	G	<DUP:TANDEM>	.	PASS	SVTYPE=DUP;IMPRECISE;CIPOS=0,216;CIEND=0,247;END=723940;SVLEN=5754
+IV	1451415	hydra6	A	<DUP:TANDEM>	.	PASS	SVTYPE=DUP;IMPRECISE;CIPOS=0,207;CIEND=0,209;END=1458203;SVLEN=6789
+IV	4206017	hydra7	T	<DUP:TANDEM>	.	PASS	SVTYPE=DUP;IMPRECISE;CIPOS=0,122;CIEND=0,122;END=4210817;SVLEN=4801
+IV	13627243	hydra5	T	<DEL>	.	PASS	SVTYPE=DEL;IMPRECISE;CIPOS=0,205;CIEND=0,184;END=13628599;SVLEN=-1357
+V	20581930	hydra8	C	<DUP:TANDEM>	.	PASS	SVTYPE=DUP;IMPRECISE;CIPOS=0,188;CIEND=0,195;END=20590728;SVLEN=8799
+X	5442429	hydra9	A	<DEL>	.	PASS	SVTYPE=DEL;IMPRECISE;CIPOS=0,200;CIEND=0,167;END=5443670;SVLEN=-1242

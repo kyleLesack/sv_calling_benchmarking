@@ -87,7 +87,7 @@ def find_vcfs(input_dir):
 			truth_data = process_truth(truth_file)
 	return (fusor_data,truth_data)
 
-# Function takes a list of sv calls and
+# Function takes a list of sv calls and calculates bin membership
 def make_variant_dict(vcf_lines):
 	del_sizes = []
 	del_dict = collections.defaultdict(list)

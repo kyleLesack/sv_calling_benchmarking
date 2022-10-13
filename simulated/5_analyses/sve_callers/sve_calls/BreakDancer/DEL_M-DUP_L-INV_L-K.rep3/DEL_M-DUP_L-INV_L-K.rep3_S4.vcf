@@ -1,0 +1,24 @@
+##fileformat=VCFv4.1
+##fileDate=20201106
+##source=BreakDancer_Max-1.4.5
+##reference=/reference/c_elegans.PRJNA13758.WS263.genomic.fa
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the variant described in this record">
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=SVLEN,Number=1,Type=Integer,Description="Difference in length between REF and ALT alleles">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##ALT=<ID=CNV,Description="Copy number variable region">
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=INS,Description="Insertion">
+##ALT=<ID=TRA,Description="Translocation Event">
+##ALT=<ID=DUP,Description="Duplication Event">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+V	9312930	breakdancer_4	N	<INV>	99	PASS	END=9412938;SVTYPE=INV;SVLEN=99693;IMPRECISE
+V	10432546	breakdancer_5	N	<INV>	99	PASS	END=10537338;SVTYPE=INV;SVLEN=104651;IMPRECISE
+V	12463419	breakdancer_6	N	<INS>	99	PASS	END=12463430;SVTYPE=INS;SVLEN=-34;IMPRECISE
+V	13431261	breakdancer_7	N	<DEL>	99	PASS	END=13435335;SVTYPE=DEL;SVLEN=4102;IMPRECISE
+V	15987873	breakdancer_8	N	<DEL>	99	PASS	END=15991464;SVTYPE=DEL;SVLEN=3605;IMPRECISE
+X	4023010	breakdancer_9	N	<INS>	99	PASS	END=4023054;SVTYPE=INS;SVLEN=-32;IMPRECISE
+II	4130238	breakdancer_0	N	<INS>	99	PASS	END=4130289;SVTYPE=INS;SVLEN=-34;IMPRECISE
+III	1880909	breakdancer_1	N	<INS>	99	PASS	END=1880971;SVTYPE=INS;SVLEN=-34;IMPRECISE
+III	6970003	breakdancer_2	N	<INS>	99	PASS	END=6970112;SVTYPE=INS;SVLEN=-42;IMPRECISE
+III	6970207	breakdancer_3	N	<DEL>	99	PASS	END=6974769;SVTYPE=DEL;SVLEN=4602;IMPRECISE

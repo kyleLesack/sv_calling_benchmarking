@@ -1,0 +1,28 @@
+##fileformat=VCFv4.1
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the variant described in this record">
+##INFO=<ID=CIPOS,Number=2,Type=Integer,Description="Confidence interval around POS for imprecise variants">
+##INFO=<ID=CIEND,Number=2,Type=Integer,Description="Confidence interval around END for imprecise variants">
+##INFO=<ID=SVLEN,Number=.,Type=Integer,Description="Difference in length between REF and ALT alleles">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=MATEID,Number=.,Type=String,Description="ID of mate breakends">
+##INFO=<ID=EVENT,Number=1,Type=String,Description="ID of event associated to breakend">
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=INV,Description="Inversion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=DUP:TANDEM,Description="Tandem Duplication">
+##source=hydra
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+II	504111	hydra2	A	<DUP:TANDEM>	.	PASS	SVTYPE=DUP;IMPRECISE;CIPOS=0,101;CIEND=0,100;END=504533;SVLEN=423
+II	3113876	hydra1	A	<DEL>	.	PASS	SVTYPE=DEL;IMPRECISE;CIPOS=0,197;CIEND=0,161;END=3116704;SVLEN=-2829
+III	2261190	hydra3	G	<DEL>	.	PASS	SVTYPE=DEL;IMPRECISE;CIPOS=0,140;CIEND=0,183;END=2264189;SVLEN=-3000
+IV	1167580	hydra4	A	<DEL>	.	PASS	SVTYPE=DEL;IMPRECISE;CIPOS=0,214;CIEND=0,230;END=1170293;SVLEN=-2714
+IV	6040180	hydra5a	C	]IV:6209976]C	.	PASS	SVTYPE=BND;MATEID=hydra5b;IMPRECISE;CIPOS=0,166
+IV	6209976	hydra5b	A	A[IV:6040180[	.	PASS	SVTYPE=BND;MATEID=hydra5a;IMPRECISE;CIPOS=0,170
+X	8480217	hydra7a	G	G]X:8659246]	.	PASS	SVTYPE=BND;MATEID=hydra7b;IMPRECISE;CIPOS=0,122
+X	8480389	hydra8a	T	[X:8659463[T	.	PASS	SVTYPE=BND;MATEID=hydra8b;IMPRECISE;CIPOS=0,123
+X	8480475	hydra9a	G	[X:8659389[G	.	PASS	SVTYPE=BND;MATEID=hydra9b;IMPRECISE;CIPOS=0,170
+X	8659246	hydra7b	T	T]X:8480217]	.	PASS	SVTYPE=BND;MATEID=hydra7a;IMPRECISE;CIPOS=0,121
+X	8659389	hydra9b	T	[X:8480475[T	.	PASS	SVTYPE=BND;MATEID=hydra9a;IMPRECISE;CIPOS=0,111
+X	8659463	hydra8b	T	[X:8480389[T	.	PASS	SVTYPE=BND;MATEID=hydra8a;IMPRECISE;CIPOS=0,174
+X	17131270	hydra6	G	<DEL>	.	PASS	SVTYPE=DEL;IMPRECISE;CIPOS=0,233;CIEND=0,225;END=17134202;SVLEN=-2933

@@ -1,0 +1,18 @@
+##fileformat=VCFv4.1
+##fileDate=20201106
+##source=cn.mops_CNV_calling
+##reference=DEL_M-DUP_S-INV_S-A
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the variant described in this record">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=SVLEN,Number=1,Type=Integer,Description="Difference in length between REF and ALT alleles">
+##ALT=<ID=CNV,Description="Copy number variable region">
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=DUP,Description="Duplication">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+I	14700001	cnmops_1	N	<DUP>	.	PASS	END=14712000;SVTYPE=DUP;SVLEN=12000;IMPRECISE
+III	4192001	cnmops_2	N	<DUP>	.	PASS	END=4200000;SVTYPE=DUP;SVLEN=8000;IMPRECISE
+IV	3132001	cnmops_3	N	<DUP>	.	PASS	END=3140000;SVTYPE=DUP;SVLEN=8000;IMPRECISE
+IV	6464001	cnmops_4	N	<DUP>	.	PASS	END=6472000;SVTYPE=DUP;SVLEN=8000;IMPRECISE
+IV	16316001	cnmops_5	N	<DUP>	.	PASS	END=16328000;SVTYPE=DUP;SVLEN=12000;IMPRECISE
+X	2292001	cnmops_6	N	<DUP>	.	PASS	END=2300000;SVTYPE=DUP;SVLEN=8000;IMPRECISE

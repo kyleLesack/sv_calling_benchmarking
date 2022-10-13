@@ -1,0 +1,29 @@
+##fileformat=VCFv4.1
+##fileDate=20201106
+##source=BreakDancer_Max-1.4.5
+##reference=/reference/c_elegans.PRJNA13758.WS263.genomic.fa
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the variant described in this record">
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=SVLEN,Number=1,Type=Integer,Description="Difference in length between REF and ALT alleles">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##ALT=<ID=CNV,Description="Copy number variable region">
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=INS,Description="Insertion">
+##ALT=<ID=TRA,Description="Translocation Event">
+##ALT=<ID=DUP,Description="Duplication Event">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+I	6442270	breakdancer_0	N	<INV>	99	PASS	END=6442925;SVTYPE=INV;SVLEN=238;IMPRECISE
+I	6442499	breakdancer_1	N	<INV>	99	PASS	END=6442925;SVTYPE=INV;SVLEN=130;IMPRECISE
+V	8989490	breakdancer_11	N	<DUP>	99	PASS	END=8990380;SVTYPE=DUP;SVLEN=347;IMPRECISE
+X	9212666	breakdancer_12	N	<DEL>	99	PASS	END=9213391;SVTYPE=DEL;SVLEN=552;IMPRECISE
+X	9871438	breakdancer_13	N	<INV>	99	PASS	END=9873362;SVTYPE=INV;SVLEN=1668;IMPRECISE
+X	14229357	breakdancer_14	N	<INS>	99	PASS	END=14229511;SVTYPE=INS;SVLEN=-34;IMPRECISE
+II	372535	breakdancer_2	N	<INV>	99	PASS	END=373974;SVTYPE=INV;SVLEN=1112;IMPRECISE
+II	4130148	breakdancer_3	N	<INS>	99	PASS	END=4130290;SVTYPE=INS;SVLEN=-35;IMPRECISE
+IV	1528229	breakdancer_6	N	<INV>	99	PASS	END=1530698;SVTYPE=INV;SVLEN=2094;IMPRECISE
+IV	3054170	breakdancer_7	N	<INS>	99	PASS	END=3054285;SVTYPE=INS;SVLEN=-35;IMPRECISE
+IV	3054341	breakdancer_8	N	<DEL>	99	PASS	END=3054808;SVTYPE=DEL;SVLEN=403;IMPRECISE
+IV	13489500	breakdancer_9	N	<INS>	99	PASS	END=13489875;SVTYPE=INS;SVLEN=-43;IMPRECISE
+IV	13489870	breakdancer_10	N	<INV>	99	PASS	END=13490785;SVTYPE=INV;SVLEN=633;IMPRECISE
+III	1388230	breakdancer_4	N	<DEL>	99	PASS	END=1388740;SVTYPE=DEL;SVLEN=446;IMPRECISE
+III	7198867	breakdancer_5	N	<DEL>	99	PASS	END=7199427;SVTYPE=DEL;SVLEN=497;IMPRECISE

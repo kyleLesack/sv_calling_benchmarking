@@ -1,0 +1,25 @@
+##fileformat=VCFv4.0
+##fileDate=20201106
+##reference=1000GenomesPhase3_decoy-GRCh37
+##source=CNVnator
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the variant described in this record">
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=SVLEN,Number=1,Type=Integer,Description="Difference in length between REF and ALT alleles">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=natorRD,Number=1,Type=Float,Description="Normalized RD">
+##INFO=<ID=natorP1,Number=1,Type=Float,Description="e-val by t-test">
+##INFO=<ID=natorP2,Number=1,Type=Float,Description="e-val by Gaussian tail">
+##INFO=<ID=natorP3,Number=1,Type=Float,Description="e-val by t-test (middle)">
+##INFO=<ID=natorP4,Number=1,Type=Float,Description="e-val by Gaussian tail (middle)">
+##INFO=<ID=natorQ0,Number=1,Type=Float,Description="Fraction of reads with 0 mapping quality">
+##INFO=<ID=natorPE,Number=1,Type=Integer,Description="Number of paired-ends support the event">
+##INFO=<ID=SAMPLES,Number=.,Type=String,Description="Sample genotyped to have the variant">
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=DUP,Description="Duplication">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+II	4296001	CNVnator_dup_1	N	<DUP>	.	PASS	END=4550000;SVTYPE=DUP;SVLEN=254000;IMPRECISE;natorRD=1.97116;natorP1=0;natorP2=4.6785e-254;natorP3=0;natorP4=5.5044e-283;natorQ0=0.0018514
+II	7566001	CNVnator_del_2	N	<DEL>	.	PASS	END=7614000;SVTYPE=DEL;SVLEN=-48000;IMPRECISE;natorRD=0;natorP1=3.32026e-12;natorP2=8.70688e-294;natorP3=3.6221e-12;natorP4=1.41159e-268;natorQ0=0
+II	11716001	CNVnator_del_3	N	<DEL>	.	PASS	END=11796000;SVTYPE=DEL;SVLEN=-80000;IMPRECISE;natorRD=0.00779412;natorP1=1.99216e-12;natorP2=1.41756e-250;natorP3=2.09701e-12;natorP4=0;natorQ0=0
+IV	6752001	CNVnator_del_4	N	<DEL>	.	PASS	END=6842000;SVTYPE=DEL;SVLEN=-90000;IMPRECISE;natorRD=0.0069497;natorP1=1.77081e-12;natorP2=0;natorP3=1.85317e-12;natorP4=0;natorQ0=0.178571
+IV	7896001	CNVnator_del_5	N	<DEL>	.	PASS	END=7966000;SVTYPE=DEL;SVLEN=-70000;IMPRECISE;natorRD=0.0065804;natorP1=2.27675e-12;natorP2=6.96971e-267;natorP3=2.41474e-12;natorP4=0;natorQ0=0
+V	6734001	CNVnator_del_6	N	<DEL>	.	PASS	END=6794000;SVTYPE=DEL;SVLEN=-60000;IMPRECISE;natorRD=0.00233342;natorP1=2.65621e-12;natorP2=0;natorP3=2.84594e-12;natorP4=0;natorQ0=0

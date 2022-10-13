@@ -4,7 +4,9 @@ Python 3 (test with 3.10.4)
 NumPy (tested with 1.23.1)
 bedtools (tested with 2.30.0)
 
-# Break down sv calls by size 
+The vcf files from the entire dataset are located in sv_calls/
+
+# Break down sv calls by size
 
 The following command finds all of the vcf files in the results directory and calls a Python script (get_sv_size_bins.py) to break the sv calls into the FusorSV size bin. Results are stored in BED files.
 

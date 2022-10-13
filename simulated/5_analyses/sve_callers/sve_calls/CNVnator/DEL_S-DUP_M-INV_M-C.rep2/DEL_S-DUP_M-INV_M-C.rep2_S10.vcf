@@ -1,0 +1,22 @@
+##fileformat=VCFv4.0
+##fileDate=20201106
+##reference=1000GenomesPhase3_decoy-GRCh37
+##source=CNVnator
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the variant described in this record">
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=SVLEN,Number=1,Type=Integer,Description="Difference in length between REF and ALT alleles">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=natorRD,Number=1,Type=Float,Description="Normalized RD">
+##INFO=<ID=natorP1,Number=1,Type=Float,Description="e-val by t-test">
+##INFO=<ID=natorP2,Number=1,Type=Float,Description="e-val by Gaussian tail">
+##INFO=<ID=natorP3,Number=1,Type=Float,Description="e-val by t-test (middle)">
+##INFO=<ID=natorP4,Number=1,Type=Float,Description="e-val by Gaussian tail (middle)">
+##INFO=<ID=natorQ0,Number=1,Type=Float,Description="Fraction of reads with 0 mapping quality">
+##INFO=<ID=natorPE,Number=1,Type=Integer,Description="Number of paired-ends support the event">
+##INFO=<ID=SAMPLES,Number=.,Type=String,Description="Sample genotyped to have the variant">
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=DUP,Description="Duplication">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+II	2418001	CNVnator_dup_1	N	<DUP>	.	PASS	END=2464000;SVTYPE=DUP;SVLEN=46000;IMPRECISE;natorRD=1.98865;natorP1=6.92924e-12;natorP2=2.08399e-78;natorP3=1.36605e-10;natorP4=7.87429e-71;natorQ0=0.00135318
+III	6072001	CNVnator_dup_2	N	<DUP>	.	PASS	END=6098000;SVTYPE=DUP;SVLEN=26000;IMPRECISE;natorRD=1.98651;natorP1=0.00387362;natorP2=4.00227e-28;natorP3=0.0134686;natorP4=4.79181e-44;natorQ0=0
+V	12908001	CNVnator_dup_3	N	<DUP>	.	PASS	END=12942000;SVTYPE=DUP;SVLEN=34000;IMPRECISE;natorRD=2.07931;natorP1=1.43623e-08;natorP2=5.03919e-86;natorP3=6.42632e-07;natorP4=7.08087e-75;natorQ0=0

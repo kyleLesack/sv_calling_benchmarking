@@ -1,0 +1,41 @@
+##fileformat=VCFv4.2
+##source=LUMPY
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=SVLEN,Number=.,Type=Integer,Description="Difference in length between REF and ALT alleles">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the variant described in this record">
+##INFO=<ID=STRANDS,Number=.,Type=String,Description="Strand orientation of the adjacency in BEDPE format (DEL:+-, DUP:-+, INV:++/--)">
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=CIPOS,Number=2,Type=Integer,Description="Confidence interval around POS for imprecise variants">
+##INFO=<ID=CIEND,Number=2,Type=Integer,Description="Confidence interval around END for imprecise variants">
+##INFO=<ID=CIPOS95,Number=2,Type=Integer,Description="Confidence interval (95%) around POS for imprecise variants">
+##INFO=<ID=CIEND95,Number=2,Type=Integer,Description="Confidence interval (95%) around END for imprecise variants">
+##INFO=<ID=MATEID,Number=.,Type=String,Description="ID of mate breakends">
+##INFO=<ID=EVENT,Number=1,Type=String,Description="ID of event associated to breakend">
+##INFO=<ID=SECONDARY,Number=0,Type=Flag,Description="Secondary breakend in a multi-line variants">
+##INFO=<ID=SU,Number=.,Type=Integer,Description="Number of pieces of evidence supporting the variant across all samples">
+##INFO=<ID=PE,Number=.,Type=Integer,Description="Number of paired-end reads supporting the variant across all samples">
+##INFO=<ID=SR,Number=.,Type=Integer,Description="Number of split reads supporting the variant across all samples">
+##INFO=<ID=BD,Number=.,Type=Integer,Description="Amount of BED evidence supporting the variant across all samples">
+##INFO=<ID=EV,Number=.,Type=String,Description="Type of LUMPY evidence contributing to the variant call">
+##INFO=<ID=PRPOS,Number=.,Type=String,Description="LUMPY probability curve of the POS breakend">
+##INFO=<ID=PREND,Number=.,Type=String,Description="LUMPY probability curve of the END breakend">
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=INV,Description="Inversion">
+##ALT=<ID=DUP:TANDEM,Description="Tandem duplication">
+##ALT=<ID=INS,Description="Insertion of novel sequence">
+##ALT=<ID=CNV,Description="Copy number variable region">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=SU,Number=1,Type=Integer,Description="Number of pieces of evidence supporting the variant">
+##FORMAT=<ID=PE,Number=1,Type=Integer,Description="Number of paired-end reads supporting the variant">
+##FORMAT=<ID=SR,Number=1,Type=Integer,Description="Number of split reads supporting the variant">
+##FORMAT=<ID=BD,Number=1,Type=Integer,Description="Amount of BED evidence supporting the variant">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	DEL_M-DUP_L-INV_L-A_
+I	8509984	1	N	<DUP>	.	.	SVTYPE=DUP;STRANDS=-+:8;SVLEN=75000;END=8584984;CIPOS=-10,8;CIEND=-10,9;CIPOS95=-3,0;CIEND95=-2,3;IMPRECISE;SU=8;PE=7;SR=1	GT:SU:PE:SR	./.:8:7:1
+III	9640843	2	N	<INV>	.	.	SVTYPE=INV;STRANDS=++:7,--:8;SVLEN=75000;END=9715843;CIPOS=-10,7;CIEND=-7,5;CIPOS95=-1,0;CIEND95=-1,0;IMPRECISE;SU=15;PE=12;SR=3	GT:SU:PE:SR	./.:15:12:3
+III	10289594	3	N	<DEL>	.	.	SVTYPE=DEL;STRANDS=+-:9;SVLEN=-1300;END=10290894;CIPOS=-10,9;CIEND=-10,9;CIPOS95=-1,3;CIEND95=-3,1;IMPRECISE;SU=9;PE=8;SR=1	GT:SU:PE:SR	./.:9:8:1
+IV	3015282	4	N	<DEL>	.	.	SVTYPE=DEL;STRANDS=+-:7;SVLEN=-1196;END=3016478;CIPOS=-10,9;CIEND=-10,9;CIPOS95=-1,3;CIEND95=-3,3;IMPRECISE;SU=7;PE=6;SR=1	GT:SU:PE:SR	./.:7:6:1
+IV	4231122	5	N	<INV>	.	.	SVTYPE=INV;STRANDS=++:13,--:5;SVLEN=50000;END=4281122;CIPOS=-10,9;CIEND=-5,9;CIPOS95=0,0;CIEND95=0,0;SU=18;PE=12;SR=6	GT:SU:PE:SR	./.:18:12:6
+IV	4850630	6	N	<DUP>	.	.	SVTYPE=DUP;STRANDS=-+:8;SVLEN=80046;END=4930676;CIPOS=-61,53;CIEND=-10,128;CIPOS95=-36,44;CIEND95=0,102;IMPRECISE;SU=8;PE=8;SR=0	GT:SU:PE:SR	./.:8:8:0
+V	11913009	7	N	<DEL>	.	.	SVTYPE=DEL;STRANDS=+-:5;SVLEN=-1400;END=11914409;CIPOS=-10,9;CIEND=-10,9;CIPOS95=-3,3;CIEND95=-3,1;IMPRECISE;SU=5;PE=4;SR=1	GT:SU:PE:SR	./.:5:4:1
+X	9085167	8	N	<DEL>	.	.	SVTYPE=DEL;STRANDS=+-:11;SVLEN=-1249;END=9086416;CIPOS=-10,9;CIEND=-10,5;CIPOS95=-1,1;CIEND95=-1,0;IMPRECISE;SU=11;PE=8;SR=3	GT:SU:PE:SR	./.:11:8:3
