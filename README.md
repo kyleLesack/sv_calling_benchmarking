@@ -4,7 +4,7 @@ This repo contains the scripts and vcf file data used to benchmark structural va
 
 Longread calling was performed using Assemblytics, MUM&Co, pbsv, Sniffles, and SVIM.
 
-[The pipeline steps are explained here.](shortread/pipeline_explanation.md)
+The pipeline steps are explained [here](real_data/shortread/pipeline_explanation.md).
 
 ## Real Data
 
