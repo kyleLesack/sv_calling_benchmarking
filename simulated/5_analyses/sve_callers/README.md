@@ -20,7 +20,7 @@ The following scripts can be run (in numerical order) to quantify the performanc
 * 6_summarize_true_positives.sh
 	* Breakdown TPs by size and type
 * 7_label_false_positives.sh
-	* Add a name for false postive variants in bedfile. Used to keep
+	* Add a name for false postive variants in bedfile. Used to keep track of false positives.
 * 8_summarize_false_positives.sh
 	* Breakdown FPs by size and type
 * 9_summarize_false_negatives.sh
