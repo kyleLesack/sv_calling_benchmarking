@@ -1,0 +1,23 @@
+##fileformat=VCFv4.2
+##fileDate=2020-11-1
+##reference=c_elegans.PRJNA13758.WS263
+##FILTER=<ID=LowQual,Description="Low Quality">
+##FILTER=<ID=PASS,Description="All filters passed">
+##ALT=<ID=INS,Description="Insertion of novel sequence">
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=CNV,Description="Copy number variable region">
+##ALT=<ID=INV,Description="Inversion">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the variant described in this record">
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=SVLEN,Number=.,Type=Integer,Description="Difference in length between REF and ALT alleles">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=CHR2,Number=1,Type=String,Description="Chromosome for END coordinate in case of a translocation">
+##INFO=<ID=SVEX,Number=1,Type=Float,Description="Expected Value of the Group SV call given the Prior Targeted Metric Pool">
+##INFO=<ID=SEQ_TECH,Number=.,Type=String,Description="Sequencing Technology Used">
+##INFO=<ID=TARGET,Number=1,Type=Integer,Description="1 if the call overlaps a target call, 0 otherwise">
+#CHROM        POS     ID      REF     ALT     QUAL    FILTER  INFO
+I	621153	SVSIM_DEL4_5600bp	N	<DEL>	.	PASS	DBVARID;CALLID=SVSIM_DEL4_5600bp;SVTYPE=DEL;EXPERIMENT=1;SAMPLE=DEL_M-DUP_L-INV_L-O;END=626753;REGION=NA
+IV	12906703	SVSIM_DEL2_5500bp	N	<DEL>	.	PASS	DBVARID;CALLID=SVSIM_DEL2_5500bp;SVTYPE=DEL;EXPERIMENT=1;SAMPLE=DEL_M-DUP_L-INV_L-O;END=12912203;REGION=NA
+X	13844706	SVSIM_DEL3_5700bp	N	<DEL>	.	PASS	DBVARID;CALLID=SVSIM_DEL3_5700bp;SVTYPE=DEL;EXPERIMENT=1;SAMPLE=DEL_M-DUP_L-INV_L-O;END=13850406;REGION=NA
+X	15996400	SVSIM_INV1_180000bp	N	<INV>	.	PASS	DBVARID;CALLID=SVSIM_INV1_180000bp;SVTYPE=INV;EXPERIMENT=1;SAMPLE=DEL_M-DUP_L-INV_L-O;END=16176400;REGION=NA
