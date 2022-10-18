@@ -1,10 +1,12 @@
 # Requirements
 
-Python 3 (test with 3.10.4)
+Python 3 (tested with 3.10.4)
 NumPy (tested with 1.23.1)
 bedtools (tested with 2.30.0)
 
 The vcf files from the entire dataset are located in sve_calls/
+
+# Instructions
 
 The following scripts can be run (in numerical order) to quantify the performance of BreakDancer, cnMOPS, CNVnator, Delly, Hydra, and Lumpy.
 

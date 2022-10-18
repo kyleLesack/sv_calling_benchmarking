@@ -4,7 +4,7 @@ This repo contains the scripts and vcf file data used to benchmark structural va
 
 Longread calling was performed using Assemblytics, MUM&Co, pbsv, Sniffles, and SVIM.
 
-To compare calling variants using a shortread data with longread data, the longread pipeline with FusorSV is available [here](fusorsv_longread).
+The pipeline steps are explained [here](real_data/shortread/pipeline_explanation.md).
 
 ## Real Data
 
@@ -14,4 +14,4 @@ The longread with FusorSV pipeline is available [here](real_data/longread_fusors
 
 The shorted pipeline is available [here](real_data/shortread).
 
-[The pipeline steps are explained here.](shortread/pipeline_explanation.md)
+
