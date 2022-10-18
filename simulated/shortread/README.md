@@ -83,7 +83,7 @@ FusorSV.py \
 
 ## 5. Analyses
 
-The performance of each caller and FusorSV were quantified using precision, recall, F1 score and Jaccard simularity.
+The performance of each caller and FusorSV were quantified using precision, recall, F1 score and Jaccard similarity.
 
 Scripts for quantifying the performance of the individual callers in the SVE pipeline (BreakDancer, cnMOPS, CNVnator, Delly, Hydra, and Lumpy) are [located here](5_analyses/sve_callers)
 
