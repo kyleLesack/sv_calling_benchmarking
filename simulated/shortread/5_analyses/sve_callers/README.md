@@ -6,6 +6,8 @@ bedtools (tested with 2.30.0)
 
 The vcf files from the entire dataset are located in sve_calls/
 
+# Instructions
+
 The following scripts can be run (in numerical order) to quantify the performance of BreakDancer, cnMOPS, CNVnator, Delly, Hydra, and Lumpy.
 
 
