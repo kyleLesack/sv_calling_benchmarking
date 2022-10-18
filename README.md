@@ -11,6 +11,7 @@ The pipeline steps are explained [here](real_data/shortread/pipeline_explanation
 ## Simulated Data
 
 The pipeline for simulated shortread data is [here](simulated/shortread/).
+
 The pipeline for simulated longread data is [here](simulated/longread/).
 
 ## Real Data
