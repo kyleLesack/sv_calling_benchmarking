@@ -1,6 +1,6 @@
 # Requirements
 
-Python 3 (test with 3.10.4)
+Python 3 (tested with 3.10.4)
 NumPy (tested with 1.23.1)
 bedtools (tested with 2.30.0)
 
